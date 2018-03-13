@@ -1,0 +1,6 @@
+[alias]
+  cbranch = "!git rev-parse --abbrev-ref HEAD"
+  heavens = "!echo 'Ours is the commit that will pierce the heavens!'"
+  lagann = "!git heavens && git push --set-upstream origin $(git cbranch)"
+  wipe = "!git reset --hard && git clean -fd"
+  undo = "reset --soft HEAD~"
