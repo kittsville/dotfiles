@@ -52,11 +52,11 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>402 224 796 473 0 0 1920 1177 </string>
+	<string>402 185 1016 512 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>425 391 1194 690 0 0 1920 1177 </string>
+	<string>267 323 1320 679 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>755 477 585 452 0 0 1920 1177 </string>
+	<string>720 127 1061 877 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -351,6 +351,13 @@
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x7f</string>
+				</dict>
+				<key>0x7f-0x80000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x1B 0x08</string>
 				</dict>
 				<key>0xf700-0x220000</key>
 				<dict>
@@ -709,7 +716,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-15T10:05:53Z</date>
+	<date>2018-03-27T09:00:17Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>WordCharacters</key>
