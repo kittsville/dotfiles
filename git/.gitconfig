@@ -4,3 +4,4 @@
   lagann = "!git heavens && git push --set-upstream origin $(git cbranch)"
   wipe = "!git reset --hard && git clean -fd"
   undo = "reset --soft HEAD~"
+  amend = "commit --amend --no-edit"
