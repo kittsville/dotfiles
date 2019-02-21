@@ -5,3 +5,4 @@
   wipe = "!git reset --hard && git clean -fd"
   undo = "reset --soft HEAD~"
   amend = "commit --amend --no-edit"
+  jones = "!f() { git log --all --full-history -- ${1}; }; f"
