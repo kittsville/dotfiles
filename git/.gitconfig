@@ -7,3 +7,4 @@
   amend = "commit --amend --no-edit"
   jones = "!f() { git log --all --full-history -- ${1}; }; f"
   lg = "log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -n 20"
+  apocalypse = "clean -dfX"
