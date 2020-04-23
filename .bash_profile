@@ -1,3 +1,7 @@
+alias clearColours="tput init"
+alias please="sudo"
+alias dockerWipe="docker rm -v $(docker stop $(docker ps -q))"
+
 # Serve pwd as website
 function pServe() {
   local port="${1:-8080}"
