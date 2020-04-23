@@ -7,8 +7,7 @@ function pServe() {
 # Open port to public over https
 function forward() {
   local port="${1:-8080}"
-  local subdomain="${2:-kittytest}"
-  lt --port "$port" --subdomain "$subdomain"
+  ngrok http "$port"
 }
 
 # Compile and run Rust file
