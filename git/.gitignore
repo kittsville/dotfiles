@@ -7,3 +7,6 @@ _site/
 # Scala metals
 .bloop
 .metals
+
+# Direnv
+.envrc
