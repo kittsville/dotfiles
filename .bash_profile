@@ -1,6 +1,7 @@
 alias clearColours="tput init"
 alias please="sudo"
 alias dockerWipe="docker rm -v $(docker stop $(docker ps -q))"
+alias whatIsMyIpAddress="curl ifconfig.me"
 
 # Serve pwd as website
 function pServe() {
