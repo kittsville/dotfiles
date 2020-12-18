@@ -2,6 +2,7 @@ alias clearColours="tput init"
 alias please="sudo"
 alias dockerWipe="docker rm -v $(docker stop $(docker ps -q))"
 alias whatIsMyIpAddress="curl ifconfig.me"
+alias treeSummary="tree --dirsfirst -L 3 --filelimit=20"
 
 # Serve pwd as website
 function pServe() {
