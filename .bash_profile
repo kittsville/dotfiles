@@ -4,6 +4,10 @@ alias dockerWipe="docker rm -v $(docker stop $(docker ps -q))"
 alias whatIsMyIpAddress="curl ifconfig.me"
 alias treeSummary="tree --dirsfirst -L 3 --filelimit=20"
 
+function dlf() {
+  docker logs -f "${1}"
+}
+
 # Serve pwd as website
 function pServe() {
   local port="${1:-8080}"
