@@ -12,3 +12,6 @@
   detachedHead = false
 [pull]
 	rebase = true
+#Add this to your home directory's .gitconfig
+#[include]
+#    path = Projects/dotfiles/git/.gitconfig
