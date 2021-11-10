@@ -10,3 +10,5 @@
   apocalypse = "clean -dfX"
 [advice]
   detachedHead = false
+[pull]
+	rebase = true
