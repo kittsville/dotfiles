@@ -1,8 +1,18 @@
 alias clearColours="tput init"
 alias please="sudo"
-alias dockerWipe='docker rm -v $(docker stop $(docker ps -q))'
 alias whatIsMyIpAddress="curl ifconfig.me"
 alias treeSummary="tree --dirsfirst -L 3 --filelimit=20"
+
+function dockerWipe() {
+  containerCount=$(docker ps -q | wc -l | xargs)
+  if [[ $containerCount -gt 0 ]]
+  then
+    echo "Wiping ${containerCount} containers..."
+    docker rm -v $(docker stop $(docker ps -q))
+  else
+    echo 'No containers are running'
+  fi
+}
 
 function dlf() {
   docker logs -f "${1}"
