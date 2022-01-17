@@ -1,5 +1,6 @@
 alias clearColours="tput init"
 alias please="sudo"
+alias it="git"
 alias whatIsMyIpAddress="curl ifconfig.me"
 alias treeSummary="tree --dirsfirst -L 3 --filelimit=20"
 
