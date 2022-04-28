@@ -3,6 +3,7 @@ alias please="sudo"
 alias it="git"
 alias whatIsMyIpAddress="curl ifconfig.me"
 alias treeSummary="tree --dirsfirst -L 3 --filelimit=20"
+alias uuidv4="uuidgen | tr \"[:upper:]\" \"[:lower:]\""
 
 function dockerWipe() {
   containerCount=$(docker ps -q | wc -l | xargs)
