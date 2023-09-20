@@ -37,3 +37,19 @@ function forward() {
 function rrun() {
   rustc $1.rs && ./$1
 }
+
+function ghopen() {
+  # Open current repo on github
+  REPO="$(git remote -v | grep fetch | sed 's/origin//' | tr ':' '/' | sed 's/.*git@/http:\/\//' | sed 's/.git *([a-z]*)//')"
+
+  os="$(uname -s)"
+
+  case "${os}" in
+    Linux*) cmd="xdg-open" ;;
+    Darwin*) cmd="open" ;;
+    CYGWIN*) cmd="start" ;;
+    *) cmd="echo Unable to open link" ;;
+  esac
+
+  $cmd "$REPO"
+}
