@@ -38,8 +38,8 @@ function rrun() {
   rustc $1.rs && ./$1
 }
 
+# Open current repo on github
 function ghopen() {
-  # Open current repo on github
   REPO="$(git remote -v | grep fetch | sed 's/origin//' | tr ':' '/' | sed 's/.*git@/http:\/\//' | sed 's/.git *([a-z]*)//')"
 
   os="$(uname -s)"
