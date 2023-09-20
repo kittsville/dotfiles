@@ -8,6 +8,10 @@
   jones = "!f() { git log --all --full-history -- ${1}; }; f"
   lg = "log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -n 20"
   apocalypse = "clean -dfX"
+  wm = "!git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'"
+  rt = "!git checkout $(git wm) && git pull"
+  hrt = "!git wipe && git rt"
+  srt = "!git add . && git stash && git rt"
 [advice]
   detachedHead = false
 [pull]
