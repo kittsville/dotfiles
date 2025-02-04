@@ -24,7 +24,7 @@ function dlf() {
 # Serve pwd as website
 function pServe() {
   local port="${1:-8080}"
-  python -m SimpleHTTPServer "$port"
+  python3 -m http.server "$port"
 }
 
 # Open port to public over https
