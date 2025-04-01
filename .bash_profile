@@ -1,7 +1,7 @@
 alias clearColours="tput init"
 alias please="sudo"
 alias it="git"
-alias whatIsMyIpAddress="curl ifconfig.me"
+alias whatIsMyIpAddress="curl ip.me"
 alias treeSummary="tree --dirsfirst -L 3 --filelimit=20"
 alias uuidv4="uuidgen | tr \"[:upper:]\" \"[:lower:]\""
 alias sbc="sbt --client"
