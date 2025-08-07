@@ -17,6 +17,17 @@ function dockerWipe() {
   fi
 }
 
+function podmanWipe() {
+  containerCount=$(podman ps -q | wc -l | xargs)
+  if [[ $containerCount -gt 0 ]]
+  then
+    echo "Wiping ${containerCount} containers..."
+    podman rm -v $(podman stop $(podman ps -q))
+  else
+    echo 'No containers are running'
+  fi
+}
+
 function dlf() {
   docker logs -f "${1}"
 }
