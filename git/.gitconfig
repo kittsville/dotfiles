@@ -12,6 +12,7 @@
   rt = "!git checkout $(git wm) && git pull"
   hrt = "!git wipe && git rt"
   srt = "!git add . && git stash && git rt"
+  fp = "!git reset --hard origin/$(git wm)"
 [advice]
   detachedHead = false
 [pull]
