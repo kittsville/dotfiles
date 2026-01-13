@@ -6,6 +6,9 @@ alias treeSummary="tree --dirsfirst -L 3 --filelimit=20"
 alias uuidv4="uuidgen | tr \"[:upper:]\" \"[:lower:]\""
 alias sbc="sbt --client"
 
+# Needed for GPG commit signing
+export GPG_TTY=$(tty)
+
 function dockerWipe() {
   containerCount=$(docker ps -q | wc -l | xargs)
   if [[ $containerCount -gt 0 ]]
