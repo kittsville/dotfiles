@@ -14,6 +14,7 @@
   hrt = "!git wipe && git rt"
   srt = "!git add . && git stash && git rt"
   fp = "!git fetch && git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)"
+  shove = "push --force-with-lease"
 [advice]
   detachedHead = false
 [pull]
